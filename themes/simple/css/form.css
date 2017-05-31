@@ -295,3 +295,49 @@ form #DMYDate-day {
 @media only screen and (min-width: 700px) { 
 
 }
+
+/*
+added by fabio from tutorial and project requirement	
+*/
+/* BROWSER POLL */
+    #BrowserPoll {
+        float: right;
+        margin: 20px 10px 0 0;
+        width: 20%;
+    }
+    form FieldList {
+        border:0;
+    }
+
+  #BrowserPoll .message {
+      float:left;
+    display: block;
+    color:red;
+    background:#efefef;
+    border:1px solid #ccc;
+    padding:5px;
+    margin:5px;
+    }
+
+    #BrowserPoll h2 {
+        font-size: 1.5em;
+        line-height:2em;
+        color: #0083C8;
+    }
+
+    #BrowserPoll .field {
+        padding:3px 0;
+    }
+
+    #BrowserPoll input.text {
+        padding: 0;
+        font-size:1em;
+    }
+
+    #BrowserPoll .Actions {
+        padding:5px 0;
+    }
+
+    #BrowserPoll .bar {
+        background-color: #015581;
+    }
