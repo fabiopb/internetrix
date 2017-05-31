@@ -21,10 +21,10 @@ class EventPage extends Page {
 		
 		// define fields for CMS
 		$fields->addFieldToTab('Root.Images', new UploadField('Photo'));
-		$fields->addFieldToTab('Root.Main', SS_Datetime::create('StartDate','Start date and time of event')
+		$fields->addFieldToTab('Root.Main', DateField::create('StartDate','Start date and time of event')
 				->setConfig('showcalendar', true),
 			 'Content');
-		$fields->addFieldToTab('Root.Main', SS_Datetime::create('EndDate','End date and time of event')
+		$fields->addFieldToTab('Root.Main', DateField::create('EndDate','End date and time of event')
 				->setConfig('showcalendar', true),
 			 'Content');
 		

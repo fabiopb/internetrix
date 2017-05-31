@@ -3,8 +3,10 @@
 class EventsAdmin extends ModelAdmin {
 
     private static $managed_models = array(
-        'Event',
+        'Events'
+        /*,
         'Category'
+        */
     );
 
     private static $url_segment = 'events';

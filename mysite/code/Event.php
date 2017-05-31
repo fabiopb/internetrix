@@ -9,7 +9,9 @@ class Event extends DataObject {
         'EndDate' => 'SS_Datetime',
     );
 
-    private static $has_one = array(
+    /*
+	private static $has_one = array(
         'Category' => 'Category'
     );
+    */
 }
