@@ -3,7 +3,13 @@
 }
 
 .blog-entry .post-image img {
-  width: 98.75%;
+  width: 40%;
+  clear: both;
+  display: inline-block;
+}
+
+.post-summary {
+	margin: 60px 0;
 }
 
 .blog-sidebar .WidgetHolder ul {

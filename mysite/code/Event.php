@@ -5,8 +5,8 @@ class Event extends DataObject {
     private static $db = array(
         'EventName' => 'Text',
         'EventCode' => 'Varchar',
-        'StartDate' => 'Date',
-        'EndDate' => 'Date',
+        'StartDate' => 'SS_Datetime',
+        'EndDate' => 'SS_Datetime',
     );
 
     private static $has_one = array(
