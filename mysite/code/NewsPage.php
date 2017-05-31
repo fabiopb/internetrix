@@ -14,9 +14,11 @@ class NewsPage extends Page {
 		$fields = parent::getCMSFields();
 		
 		// define fields for CMS
-		$fields->addFieldToTab('Root.Main', DateField::create('Date','Date of news article'));
-		$fields->addFieldToTab('Root.Main', TextareaField::create('Extract'));
-		$fields->addFieldToTab('Root.Main', TextField::create('Author','Journalist of the publication'));
+		$fields->addFieldToTab('Root.Main', DateField::create('Date','Date of news article')
+				->setConfig('showcalendar', true)
+		, 'Content');
+		$fields->addFieldToTab('Root.Main', TextareaField::create('Extract'), 'Content');
+		$fields->addFieldToTab('Root.Main', TextField::create('Author','Journalist of the publication'), 'Content');
 		
 		return $fields;
 	}
