@@ -5,7 +5,9 @@
         <div class="news-details">
             <p>Written on $Date.Nice by $Author</p>
         </div>
-        <div class="content">$Extract</div>
+        <div class="content">
+        	<span style="float: right; padding: 10px;">$Photo.ScaleWidth(210)</span>
+        	$Extract</div>
     </article>
         $Form
 </div>

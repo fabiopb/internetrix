@@ -8,6 +8,10 @@ class NewsPage extends Page {
 		'Author' => 'Varchar',
 	);
 	
+	private static $has_one = array(
+		'Photo' => 'Image',
+	);
+	
 	private static $can_be_root = false;
 	private static $icon = "cms/images/treeicons/news-file.gif";
 	
@@ -15,6 +19,7 @@ class NewsPage extends Page {
 		$fields = parent::getCMSFields();
 		
 		// define fields for CMS
+		$fields->addFieldToTab('Root.Images', new UploadField('Photo'));
 		$fields->addFieldToTab('Root.Main', DateField::create('Date','Date of news article')
 				->setConfig('showcalendar', true),
 		//		->setConfig('dateformat', 'dd/MM/YYYY'),	
