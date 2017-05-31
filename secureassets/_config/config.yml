@@ -1,0 +1,23 @@
+---
+Name: secureassetsroutes
+After: '#rootroutes'
+---
+File:
+  extensions:
+   - SecureFileExtension
+Director:
+  rules:
+    'assets': 'SecureFileController'
+SecureAssets:
+  Defaults:
+    Permission: 'Anyone'
+    Groups:
+      - 'administrators'
+      - 'content-authors'
+---
+Only:
+  classexists: 'ErrorPageControllerExtension'
+---
+SecureFileController:
+  extensions:
+    - ErrorPageControllerExtension
