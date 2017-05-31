@@ -5,8 +5,10 @@
         $Extract
         <div class="content">$Extract</div>
     </article>
+    
     <% loop $Children %>
         <% include NewsTeaser %>
     <% end_loop %>
         $Form
+        
 </div>
