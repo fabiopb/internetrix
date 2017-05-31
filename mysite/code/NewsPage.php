@@ -9,6 +9,7 @@ class NewsPage extends Page {
 	);
 	
 	private static $can_be_root = false;
+	private static $icon = "cms/images/treeicons/news-file.gif";
 	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();

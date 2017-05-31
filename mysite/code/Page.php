@@ -7,4 +7,6 @@ class Page extends SiteTree
 
     private static $has_one = array(
     );
+
+    private static $icon = "cms/images/treeicons/home-file.png";
 }

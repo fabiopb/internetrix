@@ -5,7 +5,7 @@
         <div class="news-details">
             <p>Written on $Date.Nice by $Author</p>
         </div>
-        <div class="content">$Content</div>
+        <div class="content">$Extract</div>
     </article>
         $Form
 </div>
