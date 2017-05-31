@@ -15,8 +15,10 @@ class NewsPage extends Page {
 		
 		// define fields for CMS
 		$fields->addFieldToTab('Root.Main', DateField::create('Date','Date of news article')
-				->setConfig('showcalendar', true)
-		, 'Content');
+				->setConfig('showcalendar', true),
+				->setConfig('dateformat', 'dd/MM/YYYY'),	
+			 'Content');
+		
 		$fields->addFieldToTab('Root.Main', TextareaField::create('Extract'), 'Content');
 		$fields->addFieldToTab('Root.Main', TextField::create('Author','Journalist of the publication'), 'Content');
 		
