@@ -9,6 +9,7 @@
     <% loop $Children %>
         <% include NewsTeaser %>
     <% end_loop %>
+
         $Form
         
 </div>
