@@ -10,8 +10,19 @@
 </div>
 
 <% include SideBar %>
-<div id="BrowserPoll">
+<div id="BrowserPoll" style="width: 25%;">
     <h2>Browser Poll</h2>
-    $BrowserPollForm
+        <% if $BrowserPollForm %>
+            $BrowserPollForm
+        <% else %>
+        <ul>
+            <% loop $BrowserPollResults %>
+            <li>
+                <div class="browser">$Browser: $Percentage%</div>
+                <div class="bar" style="width:$Percentage%">&nbsp;</div>
+            </li>
+            <% end_loop %>
+        </ul>
+        <% end_if %>
 </div>
 <div class="Content">
