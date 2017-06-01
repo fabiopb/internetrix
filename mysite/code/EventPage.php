@@ -20,11 +20,17 @@ class EventPage extends Page {
 		$fields = parent::getCMSFields();
 		
 		// define fields for CMS
+		/*
+			$field = new DatetimeField('Name', 'Label');
+			$field->setConfig('datavalueformat', 'yyyy-MM-dd HH:mm'); // global setting
+			$field->getDateField()->setConfig('showcalendar', 1); // field-specific setting	
+		*/
 		$fields->addFieldToTab('Root.Images', new UploadField('Photo'));
-		$fields->addFieldToTab('Root.Main', DateField::create('StartDate','Start date and time of event')
+		$fields->addFieldToTab('Root.Main', DatetimeField::create('StartDate','Start date and time of event')
+		//$fields->addFieldToTab('Root.Main', DateField::create('StartDate','Start date and time of event')
 				->setConfig('showcalendar', true),
 			 'Content');
-		$fields->addFieldToTab('Root.Main', DateField::create('EndDate','End date and time of event')
+		$fields->addFieldToTab('Root.Main', DatetimeField::create('EndDate','End date and time of event')
 				->setConfig('showcalendar', true),
 			 'Content');
 		

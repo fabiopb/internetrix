@@ -3,7 +3,7 @@
 <Files *.ss>
 	Order deny,allow
 	Deny from all
-	Allow from 127.0.0.1
+	#Allow from 127.0.0.1
 </Files>
 
 # Deny access to IIS configuration
@@ -31,7 +31,7 @@ ErrorDocument 500 /assets/error-500.html
 
 	SetEnv HTTP_MOD_REWRITE On
 	RewriteEngine On
-	RewriteBase '/internetrix'
+	RewriteBase '/'
 
 	
 
