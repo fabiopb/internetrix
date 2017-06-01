@@ -3,3 +3,8 @@ RecaptchaField:
   recaptcha_js_url: 'https://www.google.com/recaptcha/api.js'
   api_verify_server: 'https://www.google.com/recaptcha/api/siteverify'
   httpclient_class: 'RecaptchaField_HTTPClient'
+  
+  
+  ##RecaptchaField:
+  ##public_api_key: "6LdeliMUAAAAAKE93stt5yWoXSGFMIvgVw_YeOnx"
+  ##private_api_key: "6LdeliMUAAAAAMAvD7KFpIfRtDMrUGgzi-j4RmhD"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "06700d2915e62531f97b79b0cf01923a",
+    "content-hash": "1becfeb799d575f5f55959ba096072d4",
     "packages": [
         {
             "name": "assertchris/hash-compat",

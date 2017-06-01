@@ -14,7 +14,7 @@
 		"silverstripe/userforms": "*",
 		"silverstripe/secureassets": "*",
 		"silverstripe/gridfieldqueuedexport": "*",
-		"silverstripe/recaptcha": "*"
+		"silverstripe/recaptcha": "^2.0"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"

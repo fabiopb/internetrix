@@ -38,14 +38,14 @@ class RecaptchaField extends FormField
      *
      * @var string
      */
-    private static $public_api_key = '';
+    private static $public_api_key = '6LdeliMUAAAAAKE93stt5yWoXSGFMIvgVw_YeOnx';
 
     /**
      * Your private API key for a specific domain (get one at https://www.google.com/recaptcha/admin)
      *
      * @var string
      */
-    private static $private_api_key = '';
+    private static $private_api_key = '6LdeliMUAAAAAMAvD7KFpIfRtDMrUGgzi-j4RmhD';
 
     /**
      * Your proxy server details including the port
