@@ -5,9 +5,6 @@ class EventsAdmin extends ModelAdmin {
 	
     private static $managed_models = array(
         'EventPage'
-        /*,
-        'Category'
-        */
     );
 
     private static $url_segment = 'event';
