@@ -1,6 +1,9 @@
 <?php
 	class HomePage extends Page {
-	
+		public function LatestNews($num = 5) {
+		    $holder = NewsHolder::get()->First();
+		    return ($holder) ? NewsPage::get()->filter('ParentID', $holder->ID)->sort('Date DESC')->limit($num) : false;
+		}
 	}
 	
 	class HomePage_Controller extends Page_Controller {
