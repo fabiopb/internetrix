@@ -1,7 +1,7 @@
 <?php
 
 class EventsAdmin extends ModelAdmin {
-	private static $allowed_children = array('EventPage');
+    private static $allowed_children = array('EventPage');
 	
     private static $managed_models = array(
         'EventPage'
