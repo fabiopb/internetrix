@@ -9,6 +9,10 @@ class EventPage extends Page {
         'EndDate' => 'SS_Datetime',
 	);
 	
+	private static $searchable_fields = array(
+      'StartDate',
+   );
+   
 	private static $has_one = array(
 		'Photo' => 'Image',
 	);

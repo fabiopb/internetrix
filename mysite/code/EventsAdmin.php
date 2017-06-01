@@ -1,9 +1,10 @@
 <?php
 
 class EventsAdmin extends ModelAdmin {
-
+	private static $allowed_children = array('EventPage');
+	
     private static $managed_models = array(
-        'Event'
+        'EventPage'
         /*,
         'Category'
         */
@@ -13,3 +14,4 @@ class EventsAdmin extends ModelAdmin {
 
     private static $menu_title = 'Events Admin';
 }
+?>

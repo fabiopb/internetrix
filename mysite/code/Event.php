@@ -8,10 +8,21 @@ class Event extends DataObject {
         'StartDate' => 'SS_Datetime',
         'EndDate' => 'SS_Datetime',
     );
+	
+    public function getDefaultSearchContext() {
+        $fields = $this->scaffoldSearchFields(array(
+            'restrictFields' => array('StartDate','EventName')
+        ));
 
-    /*
-	private static $has_one = array(
-        'Category' => 'Category'
-    );
-    */
+        $filters = array(
+            'StartDate' => new PartialMatchFilter('StartDate'),
+            'EventName' => new GreaterThanFilter('EventName')
+        );
+
+        return new SearchContext(
+            $this->class, 
+            $fields, 
+            $filters
+        );
+    }
 }
